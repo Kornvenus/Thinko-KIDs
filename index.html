@@ -438,6 +438,10 @@
             <div class="icon-box"><img src="เกม.png" alt="Game Icon"></div>
             <span>Game</span>
         </div>
+         <div class="tab-item" onclick="selectTab('แบบประเมิน-section', this)">
+            <div class="icon-box"><img src="...." alt="Game Icon"></div>
+            <span>Game</span>
+        </div>
     </div>
 
     <div class="content-section-wrapper">
@@ -680,12 +684,12 @@
                         <div class="thumbnails-container-wrapper">
                             <div class="thumbnails-pages-container">
                                 <div class="thumbnails-page">
-                                    <div class="thumbnail-item" onclick="window.location.href='https://kornvenus.github.io/SUDOKU_4X4/'">
+                                    <div class="thumbnail-item" onclick="window.location.href='https://kornvenus.github.io/SODUKU/'">
                                         <img src="เกม2.png" alt="เกม 1">SUDOKU 4X4<span></span> </div>
-                                    <div class="thumbnail-item" onclick="window.location.href='https://kornvenus.github.io/SUDOKU_6x6/'">
-                                        <img src="เกม2.png" alt="เกม 2"> <span>SUDOKU 6X6</span> </div>
-                                    <div class="thumbnail-item" onclick="window.location.href='https://kornvenus.github.io/SUDOKU_9x9/'"> 
-                                        <img src="เกม2.png" alt="เกม 3"> <span>SUDOKU 9X9</span> </div>
+                                    <div class="thumbnail-item" onclick="window.location.href='https://example.com/story7'">
+                                        <img src="" alt="เกม 2"> <span>24</span> </div>
+                                    <div class="thumbnail-item" onclick="window.location.href='https://example.com/story7'"> 
+                                        <img src="" alt="เกม 3"> <span>A math</span> </div>
                                     <div class="thumbnail-item"> 
                                         <img src="https://via.placeholder.com/80x80/90EE90/000" alt="เกม 4"> <span>หารเลข</span> </div>
                                 </div>
@@ -785,10 +789,26 @@
             </div>
 
         </div>
+        <div id="แบบประเมิน-section" class="แบบประเมิน-section">
+            <h2><i class="fas fa-gamepad"></i> แบบประเมิน-section</h2>
+            <p>แบบประเมินวัดไรหว่า?</p>
+                <div class="subject-frame">
+                    <div class="main-carousel">
+                        <div class="featured-content">
+                            <div class="content-item">
+                                <div onclick="window.location.href='https://example.com/story7'">
+                                        <img src="....." alt="แบบประเมิน">แบบประเมิน-section<span></span> 
+                                </div>
+                            <div class="info-box"><h3>แบบประเมิน</h3></div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
     </div>
 
     <script>
-        // --- Tab Navigation ---
+        
         function selectTab(sectionId, clickedTab) {
             document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
             clickedTab.classList.add('active');
